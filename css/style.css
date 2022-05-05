@@ -173,7 +173,7 @@ ul {
  Home Section
 -------------------------------*/
 .home {
-  background-image: url(../Images/Hero.png);
+  background-image: url(../images/Hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 350px;
