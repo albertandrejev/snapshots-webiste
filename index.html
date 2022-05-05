@@ -15,25 +15,48 @@
 
 
 <!-- bootstrap -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
 <!--===============================================================================================-->
 <!-- Fontawesome -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 <!--===============================================================================================-->
 <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 <!--===============================================================================================-->
 <script src=""></script>
 </head>
 <body>
+    <script 
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous"
+    ></script>
+    <script>
+        function 
+        let endpoints = [
+            "https://snapshots.validators.network"
+        ]
+        let networks = {};
+
+        for (let url of endpoints) {
+            $(function () {
+                $.getJSON(url + "/.metadata.json", function (data) {
+                    networks = {...networks, ...data}
+                    console.log(data)
+                });
+            });
+        }  
+        
+        console.log(networks);
+    </script>
 
 
     <!-- Header Start -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container ali">
             <!-- Brand -->
-            <a class="navbar-brand" href="index.html"><img src="/Images/psthumanlogo.png" width="40" height="40" alt=""> POSTHUMAN</a>
+            <a class="navbar-brand" href="index.html"><img src="./images/psthumanlogo.png" width="40" height="40" alt=""> POSTHUMAN</a>
         </div>
     </nav>
     <!-- Header End -->
@@ -50,7 +73,7 @@
                 </div>
                 <!-- <div class="col-md-5 text-center">
                     <div class="home-img">
-                        <img src="/Images/Block.png" alt="">
+                        <img src="./images/Block.png" alt="">
                     </div> -->
                 </div>
             </div>
@@ -71,7 +94,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Atom.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Atom.png" class="rounded-circle mb-4" alt="">
                         <h5>atom</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -97,7 +120,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Cerberus Zone.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Cerberus Zone.png" class="rounded-circle mb-4" alt="">
                         <h5>Cerberus Zone</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -123,7 +146,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Chihuahua.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Chihuahua.png" class="rounded-circle mb-4" alt="">
                         <h5>Chihuahua</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -149,7 +172,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Cyber.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Cyber.png" class="rounded-circle mb-4" alt="">
                         <h5>Cyber</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -175,7 +198,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Fetch.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Fetch.png" class="rounded-circle mb-4" alt="">
                         <h5>Fetch</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -201,7 +224,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/FirmaChain.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/FirmaChain.png" class="rounded-circle mb-4" alt="">
                         <h5>FirmaChain</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -227,7 +250,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Gravity Bridge.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Gravity Bridge.png" class="rounded-circle mb-4" alt="">
                         <h5>Gravity Bridge</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -253,7 +276,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/LikeCoin.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/LikeCoin.png" class="rounded-circle mb-4" alt="">
                         <h5>Like Coin</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -279,7 +302,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Juno.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Juno.png" class="rounded-circle mb-4" alt="">
                         <h5>Juno</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -305,7 +328,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Ki Chain.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Ki Chain.png" class="rounded-circle mb-4" alt="">
                         <h5>Ki Chain</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -331,7 +354,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Lum Network.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Lum Network.png" class="rounded-circle mb-4" alt="">
                         <h5>Lum Network</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -357,7 +380,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/MediBloc.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/MediBloc.png" class="rounded-circle mb-4" alt="">
                         <h5>Medi Bloc</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -383,7 +406,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Odin Protocol.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Odin Protocol.png" class="rounded-circle mb-4" alt="">
                         <h5>Odin Protocol</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -409,7 +432,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Omniflix.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Omniflix.png" class="rounded-circle mb-4" alt="">
                         <h5>Omniflix</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -435,7 +458,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Osmosis.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Osmosis.png" class="rounded-circle mb-4" alt="">
                         <h5>Osmosis</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -461,7 +484,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Persistence.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Persistence.png" class="rounded-circle mb-4" alt="">
                         <h5>Persistence</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -487,7 +510,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Rizon.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Rizon.png" class="rounded-circle mb-4" alt="">
                         <h5>Rizon</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -513,7 +536,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/SifChain.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/SifChain.png" class="rounded-circle mb-4" alt="">
                         <h5>SifChain</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -539,7 +562,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Solana.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Solana.png" class="rounded-circle mb-4" alt="">
                         <h5>Solana</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -565,7 +588,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Starname.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Starname.png" class="rounded-circle mb-4" alt="">
                         <h5>Starname</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -591,7 +614,7 @@
                 </div>
                 <div class="col-md-3 text-center">
                     <div class="network-view">
-                        <img src="/Images/Velas.png" class="rounded-circle mb-4" alt="">
+                        <img src="./images/Velas.png" class="rounded-circle mb-4" alt="">
                         <h5>Velas</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <div class="home-btn">
@@ -639,7 +662,6 @@
 
 
 <!--- Script Source Files -->
-<script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
 <!--===============================================================================================-->
 <script type="text/javascript" src="js/popper.min.js"></script>
 <!--===============================================================================================-->
